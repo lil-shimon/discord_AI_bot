@@ -5,8 +5,8 @@ TOKEN = config.DISCORD_TOKEN
 client = discord.Client()
 
 @client.event
-async def on_load():
-    print('login in')
+async def on_ready():
+    print('Ready')
 
 @client.event
 async def on_message(message):
